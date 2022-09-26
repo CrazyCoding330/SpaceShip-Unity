@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1028640497002602}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalScale: {x: 0.4, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4561463631231398279}
   m_Father: {fileID: 4396621464435386}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4140806321310274}
   - component: {fileID: 212037804554729434}
   m_Layer: 0
-  m_Name: EngineFlame (1)
+  m_Name: EngineFlameRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,7 +56,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268992642957928}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.67, y: -0, z: -3.95}
+  m_LocalPosition: {x: 0.585, y: -0, z: -3.95}
   m_LocalScale: {x: 1.4499999, y: 2.240002, z: 1.230001}
   m_Children: []
   m_Father: {fileID: 4440197079411708}
@@ -137,7 +137,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356106951649068}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.58, y: 0.003, z: 1.03}
+  m_LocalPosition: {x: 0.58, y: -0.07, z: 1.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4667539987615428}
@@ -9990,11 +9990,11 @@ MonoBehaviour:
     type: 3}
   shootRate: 0.1
   projectileSpeed: 60
+  mineShoot: {fileID: 4326219054935191736}
   projectileSpeedModifier: 1
   muzzles:
   - {fileID: 4758063050520452}
   - {fileID: 4266835968404286}
-  mineShoot: {fileID: 4326219054935191736}
 --- !u!114 &114289310839100398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10176,7 +10176,7 @@ GameObject:
   - component: {fileID: 4049195073080568}
   - component: {fileID: 212218689686754924}
   m_Layer: 0
-  m_Name: EngineFlame
+  m_Name: EngineFlameLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10190,7 +10190,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779707047514920}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.1, y: 0.04, z: -3.96}
+  m_LocalPosition: {x: -0.823, y: 0.04, z: -3.96}
   m_LocalScale: {x: 1.45, y: 2.240001, z: 1.2300005}
   m_Children: []
   m_Father: {fileID: 4440197079411708}
@@ -10271,7 +10271,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838680628762762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.429}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4049195073080568}
@@ -15273,6 +15273,11 @@ PrefabInstance:
       propertyPath: m_ReflectionProbeUsage
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 4d836710d711c9a4db4af37e39d8774f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8f3999fe25fe6a3409f7afaaea95f6f7, type: 2}
     - target: {fileID: 100020, guid: 4d836710d711c9a4db4af37e39d8774f, type: 3}
       propertyPath: m_Name
       value: PlayerShip
